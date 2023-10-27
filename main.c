@@ -80,20 +80,14 @@ void main (void)
 
 	while (1) //gameover condition
 	{
-/*
-		DIO_u8SetPinValue(DIO_u8PORTC,DIO_u8PIN6,DIO_u8PIN_LOW);
 
-		DIO_u8GetPinValue(DIO_u8PORTD,DIO_u8PIN7,&UpSwitch);
-		if (!UpSwitch)
-		{
+		// PULL UP
+		DIO_u8SetPinValue(DIO_u8PORTC,DIO_u8PIN2,DIO_u8PIN_HIGH);
+		DIO_u8SetPinValue(DIO_u8PORTC,DIO_u8PIN3,DIO_u8PIN_HIGH);
 
-		}
-		DIO_u8GetPinValue(DIO_u8PORTD,DIO_u8PIN7,&DownSwitch);
-		if (!DownSwitch)
-		{
 
-		}
-*/
+		GIE_voidDisable();
+
 		CLCD_voidGoToRowColumn(1,0);
 		CLCD_voidSendString("                   ");
 		CLCD_voidGoToRowColumn(2,0);
@@ -104,22 +98,23 @@ void main (void)
 		CLCD_voidGoToRowColumn(2,0);
 		CLCD_voidSendString(ObstcaleArray2);
 		CLCD_voidDisplaySpecialCharacter(0,CarRowPosition,CarColPosition);
-		_delay_ms(700);
 
+		GIE_voidEable();
+
+		_delay_ms(500);
 
 
 		GIE_voidDisable();
 		if((CarRowPosition==1 && ObstcaleArray1[6]=='|')||(CarRowPosition==2 && ObstcaleArray2[6]=='|'))
 		{
-			CLCD_voidDisplaySpecialCharacter(3,CarRowPosition,CarColPosition);
+			CLCD_voidDisplaySpecialCharacter(4,CarRowPosition,CarColPosition);
 			CLCD_voidGoToRowColumn(3,5);
 			CLCD_voidSendString("Game Over");
 			_delay_ms(1000);
-			while(1);
+			break;
 		}
 
 		SHIFT();
-
 		GIE_voidEable();
 	}
 

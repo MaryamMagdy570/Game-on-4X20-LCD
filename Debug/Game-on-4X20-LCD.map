@@ -166,7 +166,7 @@ LOAD d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x29dc
+.text           0x00000000     0x2a0c
  *(.vectors)
  .vectors       0x00000000       0x54 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -376,30 +376,30 @@ LOAD d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/
  .text.GIE_voidDisable
                 0x000023ea       0x1c ./GIE_program.o
                 0x000023ea                GIE_voidDisable
- .text.main     0x00002406      0x45c ./main.o
+ .text.main     0x00002406      0x48c ./main.o
                 0x00002406                main
  .text.EXTI0_ISR
-                0x00002862       0x4e ./main.o
-                0x00002862                EXTI0_ISR
+                0x00002892       0x4e ./main.o
+                0x00002892                EXTI0_ISR
  .text.EXTI1_ISR
-                0x000028b0       0x4e ./main.o
-                0x000028b0                EXTI1_ISR
- .text.libgcc   0x000028fe       0x28 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
-                0x000028fe                __udivmodhi4
- .text.libgcc   0x00002926       0x44 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
-                0x00002926                __udivmodsi4
- .text.libgcc   0x0000296a        0x0 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x0000296a        0x0 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x0000296a        0x0 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x0000296a       0x38 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x0000296a                __prologue_saves__
- .text.libgcc   0x000029a2       0x36 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x000029a2                __epilogue_restores__
-                0x000029d8                . = ALIGN (0x2)
+                0x000028e0       0x4e ./main.o
+                0x000028e0                EXTI1_ISR
+ .text.libgcc   0x0000292e       0x28 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x0000292e                __udivmodhi4
+ .text.libgcc   0x00002956       0x44 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00002956                __udivmodsi4
+ .text.libgcc   0x0000299a        0x0 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x0000299a        0x0 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000299a        0x0 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000299a       0x38 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x0000299a                __prologue_saves__
+ .text.libgcc   0x000029d2       0x36 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x000029d2                __epilogue_restores__
+                0x00002a08                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000029d8        0x0 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x000029d8                exit
-                0x000029d8                _exit
+ .fini9         0x00002a08        0x0 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00002a08                exit
+                0x00002a08                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -418,11 +418,11 @@ LOAD d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000029d8        0x4 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x00002a08        0x4 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x000029dc                _etext = .
+                0x00002a0c                _etext = .
 
-.data           0x00800060      0x152 load address 0x000029dc
+.data           0x00800060      0x152 load address 0x00002a0c
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -518,8 +518,8 @@ LOAD d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/
                 0x008001b8                UpSwitch
                 0x008001b9                DownSwitch
                 0x008001ba                PROVIDE (__bss_end, .)
-                0x000029dc                __data_load_start = LOADADDR (.data)
-                0x00002b2e                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00002a0c                __data_load_start = LOADADDR (.data)
+                0x00002b5e                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x008001ba        0x0
                 0x008001ba                PROVIDE (__noinit_start, .)
@@ -544,7 +544,7 @@ LOAD d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x21e4
+.stab           0x00000000     0x2220
  *(.stab)
  .stab          0x00000000     0x10b0 ./CLCD_program.o
  .stab          0x000010b0      0x5c4 ./DIO_program.o
@@ -553,8 +553,8 @@ LOAD d:/embedded_systems/imt_tools/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/
                                 0x48c (size before relaxing)
  .stab          0x00001a64      0x144 ./GIE_program.o
                                 0x1e0 (size before relaxing)
- .stab          0x00001ba8      0x63c ./main.o
-                                0x864 (size before relaxing)
+ .stab          0x00001ba8      0x678 ./main.o
+                                0x8a0 (size before relaxing)
 
 .stabstr        0x00000000      0xf11
  *(.stabstr)
