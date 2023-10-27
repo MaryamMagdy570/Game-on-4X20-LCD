@@ -6,16 +6,22 @@
 C_SRCS += \
 ../CLCD_program.c \
 ../DIO_program.c \
+../EXTI_program.c \
+../GIE_program.c \
 ../main.c 
 
 OBJS += \
 ./CLCD_program.o \
 ./DIO_program.o \
+./EXTI_program.o \
+./GIE_program.o \
 ./main.o 
 
 C_DEPS += \
 ./CLCD_program.d \
 ./DIO_program.d \
+./EXTI_program.d \
+./GIE_program.d \
 ./main.d 
 
 
